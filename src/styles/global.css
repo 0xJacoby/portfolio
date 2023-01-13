@@ -48,33 +48,26 @@ body {
 
 /* index page styling */
 
-.corner {
-    display: flex;
-    gap: 30px;
-    font-size: 1.3rem;
-    position: absolute;
-    top: 8px; right: 24px;
-}
-
 .glitch {
     position: relative;
-    margin: 0 auto;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 40px;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
     text-align: center;
     letter-spacing: 0.01em;
     transform: scale3d(1, 1, 1);
   }
+
   .glitch::before, .glitch::after {
     content: attr(data-text);
     position: absolute;
+    width: 400px;
     top: 0;
     left: 0;
     right: 0;
     overflow: hidden;
-    background: #333;
+    background: #101010;
     color: #fff;
     clip: rect(0, 900px, 0, 0);
   }

@@ -3,7 +3,6 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Typewriter } from 'react-simple-typewriter';
 
 import Duck from "../components/Duck";
-import PageSelector from "../components/PageSelector";
 
 import "animate.css";
 
@@ -15,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <Typewriter words={["0xJacoby", "Jacob Sundh"]} delaySpeed={3000} cursor loop={false} />
         </div>
         <div className="animate__animated animate__fadeIn" style={{animationDelay: "1.4s"}}><Duck h="500px" w="500px" /></div>
-        <PageSelector/>
+        <h1 className="animate__animated animate__fadeInUp text-white w-[400px] glitch" data-text="COMING SOON." style={{animationDelay: "0.3s"}}>COMING SOON.</h1>
       </div>
     </main>
   )
